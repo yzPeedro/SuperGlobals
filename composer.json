@@ -8,7 +8,8 @@
             "SuperGlobals\\Server\\": "src/Server/",
             "SuperGlobals\\Get\\": "src/Get/",
             "SuperGlobals\\Post\\": "src/Post/",
-            "SuperGlobals\\Files\\": "src/Files/"
+            "SuperGlobals\\Files\\": "src/Files/",
+            "SuperGlobals\\Cookie\\": "src/Cookie/"
         }
     },
     "authors": [
