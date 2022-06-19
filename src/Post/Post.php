@@ -61,7 +61,16 @@ class Post
 
     public function set(string|int $index, mixed $value): void
     {
+        $_POST[$index] = $value;
         $this->post[$index] = $value;
+    }
+
+    public function remove(string|int $index): void
+    {
+        if($this->exists($index)) {
+            unset($_POST[$index]);
+            unset($this->post[$index]);
+        }
     }
 
     public function only(array $indexes, $object = true): array|StdClass
