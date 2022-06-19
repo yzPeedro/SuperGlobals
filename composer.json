@@ -5,7 +5,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SuperGlobals\\Server\\": "src/Server/"
+            "SuperGlobals\\Server\\": "src/Server/",
+            "SuperGlobals\\Get\\": "src/Get/"
         }
     },
     "authors": [
