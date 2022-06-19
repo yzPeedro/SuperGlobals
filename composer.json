@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "SuperGlobals\\Server\\": "src/Server/",
-            "SuperGlobals\\Get\\": "src/Get/"
+            "SuperGlobals\\Get\\": "src/Get/",
+            "SuperGlobals\\Post\\": "src/Post/"
         }
     },
     "authors": [
