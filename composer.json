@@ -10,7 +10,8 @@
             "SuperGlobals\\Post\\": "src/Post/",
             "SuperGlobals\\Files\\": "src/Files/",
             "SuperGlobals\\Cookie\\": "src/Cookie/",
-            "SuperGlobals\\Session\\": "src/Session/"
+            "SuperGlobals\\Session\\": "src/Session/",
+            "SuperGlobals\\Request\\": "src/Request/"
         }
     },
     "authors": [
