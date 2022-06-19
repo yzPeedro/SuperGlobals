@@ -11,7 +11,8 @@
             "SuperGlobals\\Files\\": "src/Files/",
             "SuperGlobals\\Cookie\\": "src/Cookie/",
             "SuperGlobals\\Session\\": "src/Session/",
-            "SuperGlobals\\Request\\": "src/Request/"
+            "SuperGlobals\\Request\\": "src/Request/",
+            "SuperGlobals\\Env\\": "src/Env/"
         }
     },
     "authors": [
