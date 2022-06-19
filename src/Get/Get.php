@@ -61,7 +61,16 @@ class Get
 
     public function set(string|int $index, mixed $value): void
     {
+        $_GET[$index] = $value;
         $this->get[$index] = $value;
+    }
+
+    public function remove(string|int $index): void
+    {
+        if($this->exists($index)) {
+            unset($_GET[$index]);
+            unset($this->get[$index]);
+        }
     }
 
     public function only(array $indexes, $object = true): array|StdClass

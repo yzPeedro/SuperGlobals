@@ -65,6 +65,14 @@ class Globals
         $this->globals[$index] = $value;
     }
 
+    public function remove(string|int $index): void
+    {
+        if($this->exists($index)) {
+            unset($GLOBALS[$index]);
+            unset($this->globals[$index]);
+        }
+    }
+
     public function only(array $indexes, $object = true): array|StdClass
     {
         if(! $object) {

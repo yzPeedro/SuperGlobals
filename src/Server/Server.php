@@ -61,7 +61,16 @@ class Server
 
     public function set(string|int $index, mixed $value): void
     {
+        $_SERVER[$index] = $value;
         $this->server[$index] = $value;
+    }
+
+    public function remove(string|int $index): void
+    {
+        if($this->exists($index)) {
+            unset($_SERVER[$index]);
+            unset($this->server[$index]);
+        }
     }
 
     public function only(array $indexes, $object = true): array|StdClass

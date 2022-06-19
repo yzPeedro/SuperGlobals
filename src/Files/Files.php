@@ -61,7 +61,16 @@ class Files
 
     public function set(string|int $index, mixed $value): void
     {
+        $_FILES[$index] = $value;
         $this->files[$index] = $value;
+    }
+
+    public function remove(string|int $index): void
+    {
+        if($this->exists($index)) {
+            unset($_FILES[$index]);
+            unset($this->files[$index]);
+        }
     }
 
     public function only(array $indexes, $object = true): array|StdClass

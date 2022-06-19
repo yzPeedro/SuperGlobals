@@ -61,7 +61,16 @@ class Request
 
     public function set(string|int $index, mixed $value): void
     {
+        $_REQUEST[$index] = $value;
         $this->request[$index] = $value;
+    }
+
+    public function remove(string|int $index): void
+    {
+        if($this->exists($index)) {
+            unset($_REQUEST[$index]);
+            unset($this->request[$index]);
+        }
     }
 
     public function only(array $indexes, $object = true): array|StdClass
